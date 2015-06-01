@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/parreira/alcool-meter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/parreira/alcool-meter/app/build/intermediates/pre-dexed/debug/classes-a3422c5f971dcd87ba0b91ec9bf64207e167af2d.jar" />
+    </item>
+    <item
+        jar="/Users/parreira/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/parreira/alcool-meter/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-44d8ae9b2dfd12553d2bf3199964142d5820bc87.jar" />
+    </item>
+    <item
+        jar="/Users/parreira/alcool-meter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/parreira/alcool-meter/app/build/intermediates/pre-dexed/debug/classes-9c07b978cc019156c48975bbb81ba83cf0b8519a.jar" />
+    </item>
+    <item
+        jar="/Users/parreira/alcool-meter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/parreira/alcool-meter/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-0631d3b7580b1623bbe63032eea34760f83ed6ae.jar" />
+    </item>
+
+</items>

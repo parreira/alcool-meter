@@ -7,17 +7,24 @@ import java.util.Date;
  */
 public abstract class Drink {
 
+    //THE DRINK CARACTERISTICS
     private String name;
     private double alcoolRate;
     private double quantity;
     private Date lastTimeDrinked;
 
 
-    protected Drink(String name, double alcoolRate,double quantity){
+    //THE DRINK PROCESS BY TIME
+    private double quantityProcessed;
+
+
+
+    protected Drink(String name, double alcoolRate, double quantity){
         this.name = name;
         this.alcoolRate = alcoolRate;
         this.quantity = quantity;
         this.lastTimeDrinked = new Date();
+        this.quantityProcessed = 0;
     }
 
 
