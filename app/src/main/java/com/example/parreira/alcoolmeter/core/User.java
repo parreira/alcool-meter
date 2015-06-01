@@ -29,11 +29,12 @@ public class User {
         return this.weight;
     }
 
+    public boolean getFasting() { return this.fasting; }
+
+    public Sex getSex(){ return this.sex; }
 
     //POS-CREATION
     public void setWeight(double weight){ this.weight = weight; }
 
     public void setFasting(boolean fasting){ this.fasting = fasting; }
-
-
 }

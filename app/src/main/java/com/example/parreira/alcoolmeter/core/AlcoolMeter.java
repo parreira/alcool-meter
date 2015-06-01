@@ -9,30 +9,8 @@ import java.util.Date;
  */
 public class AlcoolMeter {
 
-    protected final static double COEFICIENT_MAN_JEJUM = 0.7;
-    protected final static double COEFICIENT_WOMAN_JEJUM = 0.6;
-    protected final static double COEFICIENT_AFTER_MEAL = 1.1;
-
-    public enum COEFICIENT {
-        COEFICIENT_MAN_JEJUM(0.7), COEFICIENT_WOMAN_JEJUM(0.6), COEFICIENT_AFTER_MEAL(1.1);
-
-        private double coeficient;
-
-        private COEFICIENT(double coeficient){
-            this.coeficient = coeficient ;
-        }
-
-        public double getCoeficient(){
-            return this.coeficient ;
-        }
-
-    }
-
-
     private User user;
     private ArrayList<Drink> drinks;
-
-
     public AlcoolMeter(User user){
         this.user = user;
         this.drinks = new ArrayList<Drink>();
@@ -47,16 +25,33 @@ public class AlcoolMeter {
         this.drinks.remove(drink);
     }
 
-
-    //FORMULA
+    //FORMULA//////////////
     // alcool(gramas) / (peso(kg) * coeficiente)
+    public double calculateAlcoolTax(double totalAlcool, User user){
+        if(!user.getFasting()){
+            if(user.getSex()==User.Sex.man){
+                return alcoolTaxFormula(totalAlcool, user, 0.7);
+            }
+            else{
+                return alcoolTaxFormula(totalAlcool, user, 0.6);
+            }
+        }
+        else{
+            return alcoolTaxFormula(totalAlcool, user, 1.1);
+        }
+    }
+
+    public double alcoolTaxFormula(double totalAlcool, User user, double coeficient){
+        return totalAlcool / (user.getWeight() * coeficient);
+    }
+    ////////////////////
 
 
 
     public Date calculateSoberTime(){
         
 
-        return null;
+
     }
 
 }
